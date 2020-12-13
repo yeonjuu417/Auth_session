@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-10T14:39:45.345Z",
+    "end": "2020-12-10T14:39:45.634Z",
+    "duration": 289
+  },
+  "tests": [
+    {
+      "title": "should connect to database",
+      "fullTitle": "Authentication - Server Authentication - Database should connect to database",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have table `Users` in database",
+      "fullTitle": "Authentication - Server Authentication - Database should have table `Users` in database",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "invalid userId or password request should respond with message 'not authorized'",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/login invalid userId or password request should respond with message 'not authorized'",
+      "duration": 73,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "valid userId and password request should respond with message 'ok'",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/login valid userId and password request should respond with message 'ok'",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "connect.sid cookie value should be set as encrypted value while using express-session",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/login connect.sid cookie value should be set as encrypted value while using express-session",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "cookies should have Secure and SameSite option",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/login cookies should have Secure and SameSite option",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 200 status code after logout successfully",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/logout should return 200 status code after logout successfully",
+      "duration": 12,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 200 status code when requested with a valid cookie",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ GET /users/userinfo should return 200 status code when requested with a valid cookie",
+      "duration": 12,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 400 status code when requested without a cookie",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ GET /users/userinfo should return 400 status code when requested without a cookie",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should connect to database",
+      "fullTitle": "Authentication - Server Authentication - Database should connect to database",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have table `Users` in database",
+      "fullTitle": "Authentication - Server Authentication - Database should have table `Users` in database",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "invalid userId or password request should respond with message 'not authorized'",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/login invalid userId or password request should respond with message 'not authorized'",
+      "duration": 73,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "valid userId and password request should respond with message 'ok'",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/login valid userId and password request should respond with message 'ok'",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "connect.sid cookie value should be set as encrypted value while using express-session",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/login connect.sid cookie value should be set as encrypted value while using express-session",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "cookies should have Secure and SameSite option",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/login cookies should have Secure and SameSite option",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 200 status code after logout successfully",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ POST /users/logout should return 200 status code after logout successfully",
+      "duration": 12,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 200 status code when requested with a valid cookie",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ GET /users/userinfo should return 200 status code when requested with a valid cookie",
+      "duration": 12,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 400 status code when requested without a cookie",
+      "fullTitle": "Authentication - Server Authentication - Server ⛳️ GET /users/userinfo should return 400 status code when requested without a cookie",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

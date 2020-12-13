@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   setUserInfo(object) {
-    this.setState({ userData: object });
+    this.setState({ userData: object.data });
   }
 
   logoutHandler() {

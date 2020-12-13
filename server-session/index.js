@@ -5,10 +5,10 @@ const logger = require('morgan');
 const fs = require('fs');
 const https = require('https');
 const usersRouter = require('./routes/user');
+const path = require('path');
 
 const app = express();
 
-const FILL_ME_IN = 'FILL_ME_IN';
 
 // TODO: express-session 라이브러리를 이용해 쿠키 설정을 해줄 수 있습니다.
 // 앞서 쿠키 스프린트에서 설정했던 값과 동일하게 설정해도 무방합니다.
@@ -18,12 +18,12 @@ app.use(
     resave: false,
     saveUninitialized: true,
     cookie: {
-      domain: FILL_ME_IN,
-      path: FILL_ME_IN,
+      domain: 'localhost',
+      path: '/',
       maxAge: 24 * 6 * 60 * 10000,
-      sameSite: FILL_ME_IN,
-      httpOnly: FILL_ME_IN,
-      secure: FILL_ME_IN,
+      sameSite: "none",
+      httpOnly: true,
+      secure: true,
     },
   })
 );
@@ -33,15 +33,18 @@ app.use(express.urlencoded({ extended: false }));
 
 // TODO: CORS 설정이 필요합니다. 클라이언트가 어떤 origin인지에 따라 달리 설정할 수 있습니다.
 // 메서드는 GET, POST, OPTIONS를 허용합니다.
-app.use(cors());
-
+app.use(cors({
+  origin: true,
+  credentials: true,//인증을 하냐 마냐 (인증할꺼면 true)
+  methods : ['GET', 'POST', 'OPTIONS']}
+  ));
 app.use('/users', usersRouter);
 
 const server = https
   .createServer(
     {
-      key: fs.readFileSync(__dirname + '/../key.pem', 'utf-8'),
-      cert: fs.readFileSync(__dirname + '/../cert.pem', 'utf-8'),
+      key: fs.readFileSync(path.join('../../../secu/','key.pem') , 'utf-8'),
+      cert: fs.readFileSync(path.join('../../../secu/','cert.pem') , 'utf-8'),
     },
     app
   )

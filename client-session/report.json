@@ -1,0 +1,116 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-10T14:39:10.132Z",
+    "end": "2020-12-10T14:39:13.227Z",
+    "duration": 3095
+  },
+  "tests": [
+    {
+      "title": "should have userData object from props",
+      "fullTitle": "Authentication - Client Mypage Component should have userData object from props",
+      "duration": 29,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send POST `/users/logout` request when logout button is clicked",
+      "fullTitle": "Authentication - Client Mypage Component should send POST `/users/logout` request when logout button is clicked",
+      "duration": 512,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "logoutHandler should be called after successful logout",
+      "fullTitle": "Authentication - Client Mypage Component logoutHandler should be called after successful logout",
+      "duration": 505,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send POST `/login` when login button is clicked",
+      "fullTitle": "Authentication - Client Login Component should send POST `/login` when login button is clicked",
+      "duration": 517,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "loginHandler should be called after successful login",
+      "fullTitle": "Authentication - Client Login Component loginHandler should be called after successful login",
+      "duration": 507,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send GET `/users/userinfo` after successful login",
+      "fullTitle": "Authentication - Client Login Component should send GET `/users/userinfo` after successful login",
+      "duration": 509,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "setUserInfo should be called after a successful GET `/users/userinfo` request",
+      "fullTitle": "Authentication - Client Login Component setUserInfo should be called after a successful GET `/users/userinfo` request",
+      "duration": 510,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should have userData object from props",
+      "fullTitle": "Authentication - Client Mypage Component should have userData object from props",
+      "duration": 29,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send POST `/users/logout` request when logout button is clicked",
+      "fullTitle": "Authentication - Client Mypage Component should send POST `/users/logout` request when logout button is clicked",
+      "duration": 512,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "logoutHandler should be called after successful logout",
+      "fullTitle": "Authentication - Client Mypage Component logoutHandler should be called after successful logout",
+      "duration": 505,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send POST `/login` when login button is clicked",
+      "fullTitle": "Authentication - Client Login Component should send POST `/login` when login button is clicked",
+      "duration": 517,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "loginHandler should be called after successful login",
+      "fullTitle": "Authentication - Client Login Component loginHandler should be called after successful login",
+      "duration": 507,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send GET `/users/userinfo` after successful login",
+      "fullTitle": "Authentication - Client Login Component should send GET `/users/userinfo` after successful login",
+      "duration": 509,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "setUserInfo should be called after a successful GET `/users/userinfo` request",
+      "fullTitle": "Authentication - Client Login Component setUserInfo should be called after a successful GET `/users/userinfo` request",
+      "duration": 510,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
