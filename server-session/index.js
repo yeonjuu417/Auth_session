@@ -43,8 +43,8 @@ app.use('/users', usersRouter);
 const server = https
   .createServer(
     {
-      key: fs.readFileSync(path.join('../../../secu/','key.pem') , 'utf-8'),
-      cert: fs.readFileSync(path.join('../../../secu/','cert.pem') , 'utf-8'),
+      key: fs.readFileSync(path.join('../../../key/','key.pem') , 'utf-8'),
+      cert: fs.readFileSync(path.join('../../../key/','cert.pem') , 'utf-8'),
     },
     app
   )
